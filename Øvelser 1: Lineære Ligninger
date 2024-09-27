@@ -1,0 +1,399 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/NickVTom/Statisticsforpython/blob/First-Semester/%C3%98velser%201%3A%20Line%C3%A6re%20Ligninger\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Øvelser\n",
+        "\n",
+        "**Python**:\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "YNruvrrGU5ZY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Øvelse 1\n",
+        "**Online Marketing vs. Print Marketing**\n",
+        "\n",
+        "Forestil dig, at du er marketingchef i en virksomhed, og du overvejer to forskellige typer marketingkampagner - en print og en online kampagne. Du vil gerne vide, hvor meget hver kampagne vil koste baseret på antallet af mennesker, den når ud til.\n",
+        "\n",
+        "* For en print marketingkampagne, kræves en basisudgift på 2000 kr for design og opsætning, og derefter koster det 2 kr for hver person, den når ud til. Vi kan repræsentere dette som $y = 2000 + 2x$, hvor $y$ repræsenterer de totale omkostninger, og $x$ repræsenterer antallet af mennesker, kampagnen når ud til.\n",
+        "\n",
+        "* For en online marketingkampagne, kræves en basisudgift på 4000 kr for design og trykning, og derefter koster det 1 kr for hver person, den når ud til. Dette kan repræsenteres som $y = 4000 + x$, hvor $y$ også repræsenterer de totale omkostninger, og $x$ repræsenterer antallet af mennesker, kampagnen når ud til.\n",
+        "\n",
+        "#### Øvelse 1.1\n",
+        "Lad os prøve at visualisere begge disse ligninger på et plot for at få en visuel forståelse af, hvordan omkostningerne vokser i forhold til publikummets størrelse for hver marketingstrategi.\n",
+        "\n",
+        "1. Brug numpy.linspace() til at generere 1000 jævnt fordelte værdier mellem 0 og 5000 og tildel til $x$.\n",
+        "2. Transformér $x$ ved hjælp af ligningen $y = 2000 + 2x$, og tildel resultatet til y1.\n",
+        "3. Transformér $x$ ved hjælp af ligningen $y = 4000 + x$, og tildel resultatet til y2.\n",
+        "4. Generer 2 linjediagrammer på samme graf:\n",
+        "\n",
+        "En med $x$ på x-aksen og y1 på y-aksen. Indstil linjefarven til \"red\".\n",
+        "\n",
+        "En med $x$ på x-aksen og y2 på y-aksen. Indstil linjefarven til \"blue\"."
+      ],
+      "metadata": {
+        "id": "srsmO2DAxnx9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Importer NumPy som np og Matplotlib.pyplot som plt\n",
+        "\n",
+        "#NumPy (med suppression af videnskabelig annotering)\n",
+        "import numpy  as np\n",
+        "np.set_printoptions(suppress=True)\n",
+        "\n",
+        "#Matplotlib\n",
+        "import matplotlib.pyplot as plt"
+      ],
+      "metadata": {
+        "id": "KSkLRxj4ugI0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# TODO: Generer 1000 jævnt fordelte værdier mellem 0 og 5000 ved hjælp af np.linspace() og tildel dem til variablen x\n",
+        "x ="
+      ],
+      "metadata": {
+        "id": "lABgYUEZv5FI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# TODO: Transformér x ved hjælp af ligningen y = 2000 + 2x, og tildel resultatet til y1\n",
+        "y1 =\n",
+        "\n",
+        "# TODO: Transformér x ved hjælp af ligningen y = 4000 + x, og tildel resultatet til y2\n",
+        "y2 ="
+      ],
+      "metadata": {
+        "id": "WZil9JC0yb6z",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 141
+        },
+        "outputId": "6d77fe8c-a6c6-41e6-da58-195865a3fd6a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-5-19244673f8ec>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    y1 = 2000 +2 x\u001b[0m\n\u001b[0m                 ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "I denne øvelse går vi en smule ud over hvad jeg har vist jer i undervisningen. I denne visualisering skal i beskrive hvad grafen viser, ved at tilføje en titel, en forklaring af x- og y-aksen, samt en legend(). I kan se hvordan man gør ved at læse matplotlibs [dokumentation](https://matplotlib.org/3.1.1/api/pyplot_summary.html). Husk at i benytter matplotlib.pyplot som plt i Pythons brugerflade."
+      ],
+      "metadata": {
+        "id": "urCg1Svuiytx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# TODO: Brug plt.plot() til at generere et linjediagram med x på x-aksen og y1 på y-aksen. Indstil linjefarven til \"red\".\n",
+        "plt.plot(_, _, color=\"_\", label=\"Print Marketing\")\n",
+        "\n",
+        "# TODO: Brug plt.plot() til at generere et linjediagram med x på x-aksen og y2 på y-aksen. Indstil linjefarven til \"blue\".\n",
+        "plt.plot(_, _, color=\"_\", label=\"Online Marketing\")\n",
+        "\n",
+        "# Tilføj titler og labels\n",
+        "plt._(\"Cost of Marketing Strategies\")\n",
+        "plt._(\"Number of People Reached\")\n",
+        "plt._(\"Total Cost (kr)\")\n",
+        "\n",
+        "# Tilføj en legend\n",
+        "plt._\n",
+        "\n",
+        "# Vis plottet\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "ZBrdeoxOyk_-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Øvelse 1.2\n",
+        "Løs ligningen ved hjælp af matrix-operationer manuelt i python\n",
+        "\n",
+        "$$\n",
+        "\\left[\\begin{array}{rr|r}\n",
+        "2 & -1 & -2000 \\\\\n",
+        "1 & -1 & -4000\n",
+        "\\end{array}\\right]\n",
+        "$$\n"
+      ],
+      "metadata": {
+        "id": "9UX8XyI6yunj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2WmcYsVu4_Vj"
+      },
+      "source": [
+        "# Lav en matrice ved hjælp af NumPy's as array funktion\n",
+        "matrix = np._([\n",
+        "                         [_, _, _],\n",
+        "                         [_, _, _]\n",
+        "], _=np.float32)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TZ1pkaBw4_Vl"
+      },
+      "source": [
+        "matrix"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Wx9qFIg14_Vm"
+      },
+      "source": [
+        "# TODO: Divider række 1 med sig selv for at få en 1 i matrix[0, 0]\n",
+        "matrix[0] ="
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "iXrUdHlR4_Vm"
+      },
+      "source": [
+        "matrix"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nBHZODvE4_Vn"
+      },
+      "source": [
+        "# TODO: Sørg for at få en 0 i matrix[1, 0] ved at bruge rækkeoperationer\n",
+        "matrix[1] ="
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "e42uf9MW4_Vp"
+      },
+      "source": [
+        "matrix"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "OTol1yB64_Vp"
+      },
+      "source": [
+        "# TODO: Normaliser række 2, så matrix[1, 1] bliver 1\n",
+        "matrix[1] ="
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "foSVU5uW4_Vp"
+      },
+      "source": [
+        "matrix"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1cbRDx6s4_Vr"
+      },
+      "source": [
+        "# TODO: Sørg for at få et 0 i matrix[0, 1] ved at bruge rækkeoperationer\n",
+        "matrix[0] ="
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rASDAfGv4_Vr"
+      },
+      "source": [
+        "matrix"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Print og forklar løsningen på ligningssystemet.\n",
+        "print(f\"Ved {int(_[0, 2])} modtagere er omkostningerne ved online og print marketing ens, og de er {int(_[1, 2])}kr.\")"
+      ],
+      "metadata": {
+        "id": "5GJmyffx7In_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Øvelse 1.3\n",
+        "Løs ligningen ved at bruge sympy"
+      ],
+      "metadata": {
+        "id": "ilgShHy36aou"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# importer alt fra Sympy\n",
+        "from _ import _\n",
+        "\n",
+        "#importer linalg solver\n",
+        "from _ import _"
+      ],
+      "metadata": {
+        "id": "hi3bpEA9_wXJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#definer symbolerne x og y\n",
+        "x, y =\n",
+        "\n",
+        "# brug linsolve til at løse ligningen\n",
+        "_(_(([_, _, _], [_, _, _])), (_, _))"
+      ],
+      "metadata": {
+        "id": "4A6nkK1d6j2t"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Øvelse 1.4\n",
+        "Numpy har bred funktionalitet og kan ofte også bruges til lineær algebra og løsning af lineære systemer. Numpy har en funktion kaldet linalg.solve, som kan bruges til at løse simple systemer af lineære ligninger. Da vi igennem kurset skal bruge mere komplekse funktioner, som numpy ikke kan klare alene, kommer vi primært til at bruge sympy til at løse ligninger, men i denne øvelse kan i prøve at løse med numpy, ved at læse dokumentationen til numpy.linalg.solve på dette [link](https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html)\n",
+        "\n",
+        "Øvelse 1.4 er altså, løs ligningssystemet med numpy"
+      ],
+      "metadata": {
+        "id": "tagis_mu6vJG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Definerer systemet af ligninger\n",
+        "# koefficientmatrix\n",
+        "A =\n",
+        "# konstantvektor\n",
+        "b =\n",
+        "\n",
+        "# Løser systemet\n",
+        "x =\n",
+        "\n",
+        "# Print og forklar løsningen på ligningssystemet.\n",
+        "print(f\"_ {int(_[_])} _ {int(_[_])}kr.\")"
+      ],
+      "metadata": {
+        "id": "_ax7mh-h7CJ5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Øvelse 2\n",
+        "Som videre øvelse kan i visualisere og løse de lineære systemer fra Jacques (2023) opgave 1.3.6.  \n",
+        "\n",
+        "Det vil sige i skal gentage øvelse 1.1 og 1.3 (eller 1.4) med de ligninger der er opgivet i 7. opgave i exercise 1.3 i jeres bog.\n",
+        "\n",
+        "### Øvelse 3 (ekstra-opgave)\n",
+        "\n",
+        "**I hånden** / **Python**: Opgave 1.3 og 1.3* i Jacques (2023)"
+      ],
+      "metadata": {
+        "id": "sgLDCRSF8GK5"
+      }
+    }
+  ]
+}
